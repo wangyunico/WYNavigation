@@ -1,0 +1,10 @@
+//
+//  WYNavigation.debug.xcconfig
+//  WYNavigationDemo
+//
+//  Created by apple on 15/11/27.
+//  Copyright © 2015年 Neusoft. All rights reserved.
+//
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)" "$(PROJECT_DIR)/build" "$(PROJECT_DIR)/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)"
+OTHER_LDFLAGS = $(inherited) -framework "WYNavigation"

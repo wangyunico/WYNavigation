@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1809A9FA1C081958002FC196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809A9F91C081958002FC196 /* AppDelegate.swift */; };
+		1809A9FC1C081958002FC196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809A9FB1C081958002FC196 /* ViewController.swift */; };
+		1809A9FF1C081958002FC196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809A9FD1C081958002FC196 /* Main.storyboard */; };
+		1809AA011C081958002FC196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1809AA001C081958002FC196 /* Assets.xcassets */; };
+		1809AA041C081958002FC196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809AA021C081958002FC196 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1809AA2A1C0819F1002FC196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1809AA261C0819F1002FC196 /* WYNavigation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1809AA151C081986002FC196;
+			remoteInfo = WYNavigation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1809A9F61C081958002FC196 /* WYNavigationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYNavigationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1809A9F91C081958002FC196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1809A9FB1C081958002FC196 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1809A9FE1C081958002FC196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1809AA001C081958002FC196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1809AA031C081958002FC196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1809AA051C081958002FC196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1809AA261C0819F1002FC196 /* WYNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WYNavigation.xcodeproj; path = WYNavigation/WYNavigation.xcodeproj; sourceTree = SOURCE_ROOT; };
+		1809AA2D1C081B33002FC196 /* WYNavigation.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = WYNavigation.debug.xcconfig; sourceTree = "<group>"; };
+		1809AA2E1C081B58002FC196 /* WYNavigation.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = WYNavigation.release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1809A9F31C081958002FC196 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1809A9ED1C081958002FC196 = {
+			isa = PBXGroup;
+			children = (
+				1809A9F81C081958002FC196 /* WYNavigationDemo */,
+				1809A9F71C081958002FC196 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1809A9F71C081958002FC196 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1809A9F61C081958002FC196 /* WYNavigationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1809A9F81C081958002FC196 /* WYNavigationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1809A9F91C081958002FC196 /* AppDelegate.swift */,
+				1809A9FB1C081958002FC196 /* ViewController.swift */,
+				1809A9FD1C081958002FC196 /* Main.storyboard */,
+				1809AA001C081958002FC196 /* Assets.xcassets */,
+				1809AA021C081958002FC196 /* LaunchScreen.storyboard */,
+				1809AA051C081958002FC196 /* Info.plist */,
+				1809AA2D1C081B33002FC196 /* WYNavigation.debug.xcconfig */,
+				1809AA2E1C081B58002FC196 /* WYNavigation.release.xcconfig */,
+				1809AA261C0819F1002FC196 /* WYNavigation.xcodeproj */,
+			);
+			path = WYNavigationDemo;
+			sourceTree = "<group>";
+		};
+		1809AA271C0819F1002FC196 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1809AA2B1C0819F1002FC196 /* WYNavigation.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1809A9F51C081958002FC196 /* WYNavigationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1809AA081C081958002FC196 /* Build configuration list for PBXNativeTarget "WYNavigationDemo" */;
+			buildPhases = (
+				1809A9F21C081958002FC196 /* Sources */,
+				1809A9F31C081958002FC196 /* Frameworks */,
+				1809A9F41C081958002FC196 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WYNavigationDemo;
+			productName = WYNavigationDemo;
+			productReference = 1809A9F61C081958002FC196 /* WYNavigationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1809A9EE1C081958002FC196 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Neusoft;
+				TargetAttributes = {
+					1809A9F51C081958002FC196 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 1809A9F11C081958002FC196 /* Build configuration list for PBXProject "WYNavigationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1809A9ED1C081958002FC196;
+			productRefGroup = 1809A9F71C081958002FC196 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1809AA271C0819F1002FC196 /* Products */;
+					ProjectRef = 1809AA261C0819F1002FC196 /* WYNavigation.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1809A9F51C081958002FC196 /* WYNavigationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1809AA2B1C0819F1002FC196 /* WYNavigation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WYNavigation.framework;
+			remoteRef = 1809AA2A1C0819F1002FC196 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1809A9F41C081958002FC196 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1809AA041C081958002FC196 /* LaunchScreen.storyboard in Resources */,
+				1809AA011C081958002FC196 /* Assets.xcassets in Resources */,
+				1809A9FF1C081958002FC196 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1809A9F21C081958002FC196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1809A9FC1C081958002FC196 /* ViewController.swift in Sources */,
+				1809A9FA1C081958002FC196 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1809A9FD1C081958002FC196 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1809A9FE1C081958002FC196 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1809AA021C081958002FC196 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1809AA031C081958002FC196 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1809AA061C081958002FC196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1809AA071C081958002FC196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1809AA091C081958002FC196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1809AA2D1C081B33002FC196 /* WYNavigation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WYNavigationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.WYNavigationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1809AA0A1C081958002FC196 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1809AA2E1C081B58002FC196 /* WYNavigation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WYNavigationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.WYNavigationDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1809A9F11C081958002FC196 /* Build configuration list for PBXProject "WYNavigationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1809AA061C081958002FC196 /* Debug */,
+				1809AA071C081958002FC196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1809AA081C081958002FC196 /* Build configuration list for PBXNativeTarget "WYNavigationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1809AA091C081958002FC196 /* Debug */,
+				1809AA0A1C081958002FC196 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1809A9EE1C081958002FC196 /* Project object */;
+}
