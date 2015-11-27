@@ -12,6 +12,7 @@
 		1809A9FF1C081958002FC196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809A9FD1C081958002FC196 /* Main.storyboard */; };
 		1809AA011C081958002FC196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1809AA001C081958002FC196 /* Assets.xcassets */; };
 		1809AA041C081958002FC196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809AA021C081958002FC196 /* LaunchScreen.storyboard */; };
+		1809AA3C1C0834A4002FC196 /* WYNavigation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1809AA2B1C0819F1002FC196 /* WYNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +24,19 @@
 			remoteInfo = WYNavigation;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1809AA3B1C08349A002FC196 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1809AA3C1C0834A4002FC196 /* WYNavigation.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1809A9F61C081958002FC196 /* WYNavigationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYNavigationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +112,7 @@
 				1809A9F21C081958002FC196 /* Sources */,
 				1809A9F31C081958002FC196 /* Frameworks */,
 				1809A9F41C081958002FC196 /* Resources */,
+				1809AA3B1C08349A002FC196 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -288,9 +303,10 @@
 			baseConfigurationReference = 1809AA2D1C081B33002FC196 /* WYNavigation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = WYNavigationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.WYNavigationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwang.WYNavigationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -300,9 +316,10 @@
 			baseConfigurationReference = 1809AA2E1C081B58002FC196 /* WYNavigation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				INFOPLIST_FILE = WYNavigationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.neusoft.WYNavigationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuwang.WYNavigationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
