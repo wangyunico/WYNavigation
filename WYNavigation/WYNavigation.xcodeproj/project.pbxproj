@@ -10,9 +10,10 @@
 		1809AA191C081986002FC196 /* WYNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1809AA181C081986002FC196 /* WYNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1809AA471C0839BD002FC196 /* UIViewController+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809AA461C0839BD002FC196 /* UIViewController+Request.swift */; };
 		1809AA491C0839D5002FC196 /* UIViewController+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809AA481C0839D5002FC196 /* UIViewController+Response.swift */; };
-		1809AA4B1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809AA4A1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift */; };
 		1809AA5C1C0B41B0002FC196 /* WYNavigationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809AA5B1C0B41B0002FC196 /* WYNavigationRequest.swift */; };
 		183FA04A1C0E990700F72C57 /* WYNavigationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0491C0E990700F72C57 /* WYNavigationResponse.swift */; };
+		183FA04C1C0ECA0F00F72C57 /* WYPageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA04B1C0ECA0F00F72C57 /* WYPageManager.swift */; };
+		183FA0511C0ED37900F72C57 /* UIViewController+VChierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0501C0ED37900F72C57 /* UIViewController+VChierarchy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +22,10 @@
 		1809AA1A1C081986002FC196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1809AA461C0839BD002FC196 /* UIViewController+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Request.swift"; sourceTree = "<group>"; };
 		1809AA481C0839D5002FC196 /* UIViewController+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Response.swift"; sourceTree = "<group>"; };
-		1809AA4A1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ViewHierarchy.swift"; sourceTree = "<group>"; };
 		1809AA5B1C0B41B0002FC196 /* WYNavigationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYNavigationRequest.swift; sourceTree = "<group>"; };
 		183FA0491C0E990700F72C57 /* WYNavigationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYNavigationResponse.swift; sourceTree = "<group>"; };
+		183FA04B1C0ECA0F00F72C57 /* WYPageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYPageManager.swift; sourceTree = "<group>"; };
+		183FA0501C0ED37900F72C57 /* UIViewController+VChierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+VChierarchy.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 				1809AA181C081986002FC196 /* WYNavigation.h */,
 				1809AA1A1C081986002FC196 /* Info.plist */,
 				1809AA481C0839D5002FC196 /* UIViewController+Response.swift */,
-				1809AA4A1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift */,
 				1809AA461C0839BD002FC196 /* UIViewController+Request.swift */,
 				1809AA5B1C0B41B0002FC196 /* WYNavigationRequest.swift */,
 				183FA0491C0E990700F72C57 /* WYNavigationResponse.swift */,
+				183FA04B1C0ECA0F00F72C57 /* WYPageManager.swift */,
+				183FA0501C0ED37900F72C57 /* UIViewController+VChierarchy.swift */,
 			);
 			path = WYNavigation;
 			sourceTree = "<group>";
@@ -146,8 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1809AA471C0839BD002FC196 /* UIViewController+Request.swift in Sources */,
+				183FA0511C0ED37900F72C57 /* UIViewController+VChierarchy.swift in Sources */,
+				183FA04C1C0ECA0F00F72C57 /* WYPageManager.swift in Sources */,
 				1809AA5C1C0B41B0002FC196 /* WYNavigationRequest.swift in Sources */,
-				1809AA4B1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift in Sources */,
 				1809AA491C0839D5002FC196 /* UIViewController+Response.swift in Sources */,
 				183FA04A1C0E990700F72C57 /* WYNavigationResponse.swift in Sources */,
 			);
