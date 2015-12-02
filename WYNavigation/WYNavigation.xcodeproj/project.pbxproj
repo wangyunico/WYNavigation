@@ -14,6 +14,7 @@
 		183FA04A1C0E990700F72C57 /* WYNavigationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0491C0E990700F72C57 /* WYNavigationResponse.swift */; };
 		183FA04C1C0ECA0F00F72C57 /* WYPageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA04B1C0ECA0F00F72C57 /* WYPageManager.swift */; };
 		183FA0511C0ED37900F72C57 /* UIViewController+VChierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0501C0ED37900F72C57 /* UIViewController+VChierarchy.swift */; };
+		183FA0581C0F31D800F72C57 /* UINavigationViewController+pophook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0571C0F31D800F72C57 /* UINavigationViewController+pophook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		183FA0491C0E990700F72C57 /* WYNavigationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYNavigationResponse.swift; sourceTree = "<group>"; };
 		183FA04B1C0ECA0F00F72C57 /* WYPageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYPageManager.swift; sourceTree = "<group>"; };
 		183FA0501C0ED37900F72C57 /* UIViewController+VChierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+VChierarchy.swift"; sourceTree = "<group>"; };
+		183FA0571C0F31D800F72C57 /* UINavigationViewController+pophook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+pophook.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				183FA0491C0E990700F72C57 /* WYNavigationResponse.swift */,
 				183FA04B1C0ECA0F00F72C57 /* WYPageManager.swift */,
 				183FA0501C0ED37900F72C57 /* UIViewController+VChierarchy.swift */,
+				183FA0571C0F31D800F72C57 /* UINavigationViewController+pophook.swift */,
 			);
 			path = WYNavigation;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				1809AA471C0839BD002FC196 /* UIViewController+Request.swift in Sources */,
 				183FA0511C0ED37900F72C57 /* UIViewController+VChierarchy.swift in Sources */,
+				183FA0581C0F31D800F72C57 /* UINavigationViewController+pophook.swift in Sources */,
 				183FA04C1C0ECA0F00F72C57 /* WYPageManager.swift in Sources */,
 				1809AA5C1C0B41B0002FC196 /* WYNavigationRequest.swift in Sources */,
 				1809AA491C0839D5002FC196 /* UIViewController+Response.swift in Sources */,

@@ -13,6 +13,8 @@
 		1809AA011C081958002FC196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1809AA001C081958002FC196 /* Assets.xcassets */; };
 		1809AA041C081958002FC196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1809AA021C081958002FC196 /* LaunchScreen.storyboard */; };
 		1809AA3C1C0834A4002FC196 /* WYNavigation.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1809AA2B1C0819F1002FC196 /* WYNavigation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		183FA0531C0EE72400F72C57 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0521C0EE72400F72C57 /* SecondViewController.swift */; };
+		183FA0561C0EE73C00F72C57 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0551C0EE73C00F72C57 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1809AA261C0819F1002FC196 /* WYNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WYNavigation.xcodeproj; path = WYNavigation/WYNavigation.xcodeproj; sourceTree = SOURCE_ROOT; };
 		1809AA2D1C081B33002FC196 /* WYNavigation.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = WYNavigation.debug.xcconfig; sourceTree = "<group>"; };
 		1809AA2E1C081B58002FC196 /* WYNavigation.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = WYNavigation.release.xcconfig; sourceTree = "<group>"; };
+		183FA0521C0EE72400F72C57 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		183FA0551C0EE73C00F72C57 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			children = (
 				1809A9F91C081958002FC196 /* AppDelegate.swift */,
 				1809A9FB1C081958002FC196 /* ViewController.swift */,
+				183FA0521C0EE72400F72C57 /* SecondViewController.swift */,
+				183FA0551C0EE73C00F72C57 /* ThirdViewController.swift */,
 				1809A9FD1C081958002FC196 /* Main.storyboard */,
 				1809AA001C081958002FC196 /* Assets.xcassets */,
 				1809AA021C081958002FC196 /* LaunchScreen.storyboard */,
@@ -190,7 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183FA0531C0EE72400F72C57 /* SecondViewController.swift in Sources */,
 				1809A9FC1C081958002FC196 /* ViewController.swift in Sources */,
+				183FA0561C0EE73C00F72C57 /* ThirdViewController.swift in Sources */,
 				1809A9FA1C081958002FC196 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

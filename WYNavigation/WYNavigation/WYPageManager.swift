@@ -12,26 +12,25 @@ import UIKit
 public class WYPageManager: NSObject {
     
     private var _rootViewController:UIViewController?
-    private var _navigationViewController:UINavigationController!{
-        didSet{
-            if  let appDelegate = UIApplication.sharedApplication().delegate {
-                appDelegate.window!!.rootViewController = _navigationViewController
-            }
+    private let _navigationViewController:UINavigationController = {
+        let navigationVIewController = UINavigationController()
+        if  let appDelegate = UIApplication.sharedApplication().delegate {
+            appDelegate.window!!.rootViewController = navigationVIewController
         }
-    }
+        return navigationVIewController
+    }()
     // 相当于ViewController的堆栈
-    private var pageStack = [UIViewController]()
+    internal var pageStack = [UIViewController]()
     // 获取根ViewController
     public var rootViewController:UIViewController?{ get{return _rootViewController}}
     // 获取当前pages
     public var pages:[UIViewController]{get {return pageStack}}
     
-    static let defaultManger:WYPageManager = WYPageManager()
+    public static let defaultManger:WYPageManager = WYPageManager()
     
     private override init() {
         super.init()
-        // 限制访问
-        _navigationViewController = UINavigationController.init()
+        UINavigationController.xxx_swizzlepopViewControllerAnimated()
     }
     
     
@@ -41,7 +40,7 @@ public class WYPageManager: NSObject {
     
     - parameter vc: ViewController
     */
-    func setRootViewController(vc:UIViewController){
+    public  func setRootViewController(vc:UIViewController){
         guard (self.rootViewController == nil) else {
             return
         }
@@ -60,9 +59,16 @@ public class WYPageManager: NSObject {
      - parameter request:      页面的请求
      - parameter response:     页面的回调
      */
-    func pushPage(topage:UIViewController, currentPage:UIViewController, request:WYNavigationRequest? = nil , response:Response? = nil ){
+    public   func pushPage(topage:UIViewController, currentPage:UIViewController, request:WYNavigationRequest? = nil , response:Response? = nil ){
         guard NSThread.currentThread().isMainThread else {
             fatalError(" Push Page should in mainThread")
+        }
+        if !self.pageStack.contains(currentPage) {
+            if let vc = self.pageStack.last{
+                vc.toVC = currentPage
+                currentPage.fromVC = vc
+            }
+            self.pageStack.append(currentPage)
         }
         topage.request = request
         currentPage.response = response
@@ -78,19 +84,29 @@ public class WYPageManager: NSObject {
      - parameter page:     当前弹出的页面
      - parameter response: 页面的回调
      */
-    func popPage(page:UIViewController, response:WYNavigationResponse? = nil){
+    public   func popPage(page:UIViewController, response:WYNavigationResponse? = nil){
         guard NSThread.currentThread().isMainThread else {
             fatalError(" Pop Page should in mainThread")
         }
-        if let currentPage = self.pageStack.last {
-            if let previousPage = currentPage.fromVC {
-                _navigationViewController.popToViewController(previousPage, animated:true)
+        if self.pageStack.contains(page){
+            if let currentPage = self.pageStack.last {
+                if let previousPage = currentPage.fromVC {
+                    _navigationViewController.popToViewController(previousPage, animated:true)
+                    previousPage.toVC = nil
+                    previousPage.response?(resp: response)
+                }
+                currentPage.fromVC = nil
+                currentPage.response = nil
+                self.pageStack.removeLast()
+            }
+        }else {
+            if let previousPage = self.pageStack.last{
+                _navigationViewController.popToViewController(previousPage, animated: true)
                 previousPage.toVC = nil
                 previousPage.response?(resp: response)
             }
-            currentPage.fromVC = nil
-            currentPage.response = nil
-            self.pageStack.removeLast()
+            page.fromVC = nil
+            page.response = nil 
         }
     }
     
@@ -100,7 +116,7 @@ public class WYPageManager: NSObject {
      - parameter currentPage: 当前页面
      - parameter response:    响应
      */
-    func popPageToIndex(index:NSInteger, currentPage:UIViewController, response:WYNavigationResponse? = nil ){
+    public  func popPageToIndex(index:NSInteger, currentPage:UIViewController, response:WYNavigationResponse? = nil ){
         
         guard NSThread.currentThread().isMainThread else {
             fatalError(" Pop Page should in mainThread")
