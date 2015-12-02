@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1809AA191C081986002FC196 /* WYNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1809AA181C081986002FC196 /* WYNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1809AA471C0839BD002FC196 /* UIViewController+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809AA461C0839BD002FC196 /* UIViewController+Request.swift */; };
+		1809AA491C0839D5002FC196 /* UIViewController+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809AA481C0839D5002FC196 /* UIViewController+Response.swift */; };
+		1809AA4B1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809AA4A1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift */; };
+		1809AA5C1C0B41B0002FC196 /* WYNavigationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1809AA5B1C0B41B0002FC196 /* WYNavigationRequest.swift */; };
+		183FA04A1C0E990700F72C57 /* WYNavigationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0491C0E990700F72C57 /* WYNavigationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1809AA151C081986002FC196 /* WYNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WYNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1809AA181C081986002FC196 /* WYNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WYNavigation.h; sourceTree = "<group>"; };
 		1809AA1A1C081986002FC196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1809AA461C0839BD002FC196 /* UIViewController+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Request.swift"; sourceTree = "<group>"; };
+		1809AA481C0839D5002FC196 /* UIViewController+Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Response.swift"; sourceTree = "<group>"; };
+		1809AA4A1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ViewHierarchy.swift"; sourceTree = "<group>"; };
+		1809AA5B1C0B41B0002FC196 /* WYNavigationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYNavigationRequest.swift; sourceTree = "<group>"; };
+		183FA0491C0E990700F72C57 /* WYNavigationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYNavigationResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +58,11 @@
 			children = (
 				1809AA181C081986002FC196 /* WYNavigation.h */,
 				1809AA1A1C081986002FC196 /* Info.plist */,
+				1809AA481C0839D5002FC196 /* UIViewController+Response.swift */,
+				1809AA4A1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift */,
+				1809AA461C0839BD002FC196 /* UIViewController+Request.swift */,
+				1809AA5B1C0B41B0002FC196 /* WYNavigationRequest.swift */,
+				183FA0491C0E990700F72C57 /* WYNavigationResponse.swift */,
 			);
 			path = WYNavigation;
 			sourceTree = "<group>";
@@ -130,6 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1809AA471C0839BD002FC196 /* UIViewController+Request.swift in Sources */,
+				1809AA5C1C0B41B0002FC196 /* WYNavigationRequest.swift in Sources */,
+				1809AA4B1C083A3F002FC196 /* UIViewController+ViewHierarchy.swift in Sources */,
+				1809AA491C0839D5002FC196 /* UIViewController+Response.swift in Sources */,
+				183FA04A1C0E990700F72C57 /* WYNavigationResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +248,7 @@
 		1809AA1E1C081986002FC196 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -239,12 +260,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangyu.WYNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1809AA1F1C081986002FC196 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
