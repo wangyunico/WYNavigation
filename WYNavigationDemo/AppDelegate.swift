@@ -17,11 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
         self.window!.autoresizesSubviews = true
         let viewController = ViewController()
-        // self.window!.rootViewController = viewController
         WYPageManager.defaultManger.setRootViewController(viewController)
         self.window!.makeKeyAndVisible()
         return true

@@ -15,6 +15,9 @@
 		183FA04C1C0ECA0F00F72C57 /* WYPageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA04B1C0ECA0F00F72C57 /* WYPageManager.swift */; };
 		183FA0511C0ED37900F72C57 /* UIViewController+VChierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0501C0ED37900F72C57 /* UIViewController+VChierarchy.swift */; };
 		183FA0581C0F31D800F72C57 /* UINavigationViewController+pophook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FA0571C0F31D800F72C57 /* UINavigationViewController+pophook.swift */; };
+		18CEAD0F1C1B053000EC75A5 /* UIViewController+Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEAD0E1C1B053000EC75A5 /* UIViewController+Transition.swift */; };
+		18CEAD151C1B05A200EC75A5 /* WYBaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEAD141C1B05A200EC75A5 /* WYBaseAnimator.swift */; };
+		18CEAD181C1B112A00EC75A5 /* WYFromRigtAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEAD171C1B112A00EC75A5 /* WYFromRigtAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		183FA04B1C0ECA0F00F72C57 /* WYPageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYPageManager.swift; sourceTree = "<group>"; };
 		183FA0501C0ED37900F72C57 /* UIViewController+VChierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+VChierarchy.swift"; sourceTree = "<group>"; };
 		183FA0571C0F31D800F72C57 /* UINavigationViewController+pophook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationViewController+pophook.swift"; sourceTree = "<group>"; };
+		18CEAD0E1C1B053000EC75A5 /* UIViewController+Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Transition.swift"; sourceTree = "<group>"; };
+		18CEAD141C1B05A200EC75A5 /* WYBaseAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYBaseAnimator.swift; sourceTree = "<group>"; };
+		18CEAD171C1B112A00EC75A5 /* WYFromRigtAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WYFromRigtAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		1809AA171C081986002FC196 /* WYNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				18CEAD061C1B041600EC75A5 /* Transition */,
 				1809AA181C081986002FC196 /* WYNavigation.h */,
 				1809AA1A1C081986002FC196 /* Info.plist */,
 				1809AA481C0839D5002FC196 /* UIViewController+Response.swift */,
@@ -71,6 +78,16 @@
 				183FA0571C0F31D800F72C57 /* UINavigationViewController+pophook.swift */,
 			);
 			path = WYNavigation;
+			sourceTree = "<group>";
+		};
+		18CEAD061C1B041600EC75A5 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				18CEAD0E1C1B053000EC75A5 /* UIViewController+Transition.swift */,
+				18CEAD141C1B05A200EC75A5 /* WYBaseAnimator.swift */,
+				18CEAD171C1B112A00EC75A5 /* WYFromRigtAnimator.swift */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +171,12 @@
 				1809AA471C0839BD002FC196 /* UIViewController+Request.swift in Sources */,
 				183FA0511C0ED37900F72C57 /* UIViewController+VChierarchy.swift in Sources */,
 				183FA0581C0F31D800F72C57 /* UINavigationViewController+pophook.swift in Sources */,
+				18CEAD151C1B05A200EC75A5 /* WYBaseAnimator.swift in Sources */,
 				183FA04C1C0ECA0F00F72C57 /* WYPageManager.swift in Sources */,
 				1809AA5C1C0B41B0002FC196 /* WYNavigationRequest.swift in Sources */,
+				18CEAD0F1C1B053000EC75A5 /* UIViewController+Transition.swift in Sources */,
 				1809AA491C0839D5002FC196 /* UIViewController+Response.swift in Sources */,
+				18CEAD181C1B112A00EC75A5 /* WYFromRigtAnimator.swift in Sources */,
 				183FA04A1C0E990700F72C57 /* WYNavigationResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

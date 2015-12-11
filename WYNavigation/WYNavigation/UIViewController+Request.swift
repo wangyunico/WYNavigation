@@ -24,9 +24,9 @@ private var kwyNavigationRequestKey: Void?
 
 
 
-extension UIViewController{
+public extension UIViewController{
     
-    var request:WYNavigationRequest?{
+    public   var request:WYNavigationRequest?{
         get {
             return objc_getAssociatedObject(self, &kwyNavigationRequestKey) as? WYNavigationRequest
         }

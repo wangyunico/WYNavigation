@@ -11,7 +11,7 @@ import Foundation
 
 public typealias Response = (resp:WYNavigationResponse?) -> ()
 private var kwyNavigationResponseKey: Void?
-extension UIViewController  {
+public extension UIViewController  {
     
     
     private class ResponseWrapper:NSObject{
@@ -22,7 +22,7 @@ extension UIViewController  {
         }
     }
     
-    var response:Response?{
+    public  var response:Response?{
         
         get{
             let wrapper = objc_getAssociatedObject(self, &kwyNavigationResponseKey) as? ResponseWrapper

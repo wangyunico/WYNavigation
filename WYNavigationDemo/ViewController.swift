@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         let button = UIButton(frame: CGRectMake(100,100,100,100))
         button.backgroundColor = UIColor.redColor()
         self.view.addSubview(button)
+        self.transition = WYFromRigtAnimator()
         button.addTarget(self, action: "changePage", forControlEvents: .TouchUpInside)
     }
     
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     
     func changePage(){
         let page = SecondViewController()
+        
         pushPage(page)
     }
 }

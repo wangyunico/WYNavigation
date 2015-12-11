@@ -74,6 +74,7 @@ public class WYPageManager: NSObject {
         currentPage.response = response
         topage.fromVC = currentPage
         currentPage.toVC = topage
+        _navigationViewController.delegate = currentPage
         _navigationViewController.pushViewController(topage, animated: true)
         self.pageStack.append(topage)
     }
@@ -91,6 +92,7 @@ public class WYPageManager: NSObject {
         if self.pageStack.contains(page){
             if let currentPage = self.pageStack.last {
                 if let previousPage = currentPage.fromVC {
+                    _navigationViewController.delegate = previousPage
                     _navigationViewController.popToViewController(previousPage, animated:true)
                     previousPage.toVC = nil
                     previousPage.response?(resp: response)
@@ -101,6 +103,7 @@ public class WYPageManager: NSObject {
             }
         }else {
             if let previousPage = self.pageStack.last{
+                _navigationViewController.delegate = previousPage
                 _navigationViewController.popToViewController(previousPage, animated: true)
                 previousPage.toVC = nil
                 previousPage.response?(resp: response)
